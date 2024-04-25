@@ -30,8 +30,13 @@ def find_min_max(inputList):
 
     return inputMin, inputMax
 
-def sort():    
-    print("sort_temperature")
+def sortList(inputList):    
+    return inputList.sort()
 
-def calc():    
-    print("calc_median_temperature")
+def calc_median(inputList):
+    if (len(inputList) % 2 == 1):
+        inputMedian = inputList[(len(inputList) + 1) / 2]
+    else:
+        inputMedian = (inputList[len(inputList)/2] + inputList[len(inputList)/2 + 1]) / 2
+    
+    return inputMedian
